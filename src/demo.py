@@ -70,7 +70,7 @@ def SolveImage(model, color=(0x40, 0x16, 0x66)):
         cv2.waitKey(0)
 ##摄像头
 def SolveCapter(model, color=(0x40, 0x16, 0x66)):
-    capture = cv2.VideoCapture(0)
+    capture = cv2.VideoCapture(0，cv2.CAP_DSHOW)
     capture.set(3, 640)  # 设置分辨率
     capture.set(4, 480)
     while (True):
